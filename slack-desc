@@ -1,0 +1,11 @@
+libgpiod: libgpiod (a library and tools for interacting with Linux GPIO device)
+libgpiod:
+libgpiod: libgpiod encapsulates the ioctl calls and data structures behind a
+libgpiod: straightforward API. This new character device interface guarantees
+libgpiod: all allocated resources are freed after closing the device file
+libgpiod: descriptor and adds several new features that are not present in
+libgpiod: the obsolete sysfs interface (like event polling, setting/reading
+libgpiod: multiple values at once or open-source and open-drain GPIOs).
+libgpiod:
+libgpiod:
+libgpiod: Packaged by Georgi D. Sotirov <gdsotirov@gmail.com>
