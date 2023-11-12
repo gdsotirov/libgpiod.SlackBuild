@@ -1,7 +1,1 @@
 aaa_glibc-solibs >= 2.33
-kmod >= 29
-openssl >= 1.1.1m | openssl-solibs >= 1.1.1m
-util-linux >= 2.37.3
-xz >= 5.2.5
-zlib >= 1.2.11
-zstd >= 1.5.2
