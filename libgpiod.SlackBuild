@@ -78,11 +78,9 @@ make DESTDIR=$PKG install || exit 6
 
 # Prepare package
 bin_perms $PKG
-( cd $PKG; strip_lib )
+( cd $PKG; strip_bin; strip_lib )
+DOCFILES="$DOCFILES LICENSES"
 ( cd $SRC; create_docs $PKG $NAME-$VERSION )
-( cd $PKG/usr/doc/${NAME}-${VERSION}
-  mv COPYING.LESSER COPYING
-  mv README.md README )
 gzip_man $PKG
 
 install --mode 755 --directory $PKG/install
